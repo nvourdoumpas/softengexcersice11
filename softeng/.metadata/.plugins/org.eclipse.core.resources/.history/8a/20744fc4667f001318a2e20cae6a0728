@@ -1,0 +1,202 @@
+package Vourdoumpas_Samios;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Administrator extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField motime;
+	private JTextField takings;
+	private JTextField fpa;
+	private JTextField profits;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Administrator frame = new Administrator();
+					frame.setVisible(false);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+				try { 
+					if (rs != null) rs.close(); } 
+				catch (SQLException e) {
+					e.printStackTrace(); }
+					
+					try { 
+						if (stmt != null) stmt.close(); }
+					catch (SQLException e) {
+					e.printStackTrace(); }
+					try { 
+						if (conn != null) conn.close(); } 
+					catch (SQLException e){
+					e.printStackTrace(); }
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Administrator() {
+		setTitle("Welcome Administrator!");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 469, 430);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("\u0391\u03BD\u03AC\u03BB\u03C5\u03C3\u03B7 \u03A0\u03C9\u03BB\u03AE\u03C3\u03B5\u03C9\u03BD");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel.setBounds(10, 40, 120, 20);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("\u039C\u03AD\u03C3\u03BF\u03C2 \u03A7\u03C1\u03CC\u03BD\u03BF\u03C2 \u0391\u03BD\u03B1\u03BC\u03BF\u03BD\u03AE\u03C2");
+		lblNewLabel_1.setBounds(10, 100, 130, 20);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel label_1 = new JLabel("\u0395\u03B9\u03C3\u03C0\u03C1\u03AC\u03BE\u03B5\u03B9\u03C2");
+		label_1.setBounds(10, 162, 130, 20);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("\u03A6.\u03A0.\u0391.");
+		label_2.setBounds(10, 193, 130, 20);
+		contentPane.add(label_2);
+		
+		JLabel label_3 = new JLabel("\u039A\u03B1\u03B8\u03B1\u03C1\u03CC \u039A\u03AD\u03C1\u03B4\u03BF\u03C2");
+		label_3.setBounds(10, 224, 130, 20);
+		contentPane.add(label_3);
+		
+		motime = new JTextField();
+		motime.setBounds(150, 100, 120, 20);
+		contentPane.add(motime);
+		motime.setColumns(10);
+		
+		takings = new JTextField();
+		takings.setColumns(10);
+		takings.setBounds(150, 162, 120, 20);
+		contentPane.add(takings);
+		
+		fpa = new JTextField();
+		fpa.setColumns(10);
+		fpa.setBounds(150, 193, 120, 20);
+		contentPane.add(fpa);
+		
+		profits = new JTextField();
+		profits.setColumns(10);
+		profits.setBounds(150, 224, 120, 20);
+		contentPane.add(profits);
+		
+		JButton calc = new JButton("\u03A5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03BC\u03CC\u03C2");
+		calc.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+
+				try
+				{
+					Class.forName("com.mysql.jdbc.Driver").newInstance();
+					String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+					String connectionUser = "root";
+					String connectionPassword = "softeng";
+					conn = DriverManager.getConnection(connectionUrl, connectionUser,
+					connectionPassword);
+					stmt = conn.createStatement();
+					rs = stmt.executeQuery("SELECT * FROM transfer;");
+					
+					double sumv=0;
+					int sumt=0;
+					int i=0;
+					
+					while (rs.next()) {
+						double dbv = rs.getDouble("tvalue");  
+						sumv = sumv + dbv;
+						int dbt = rs.getInt("ttime");
+						sumt = sumt + dbt;
+						i++;
+					}
+					
+					int mot = sumt/i;
+					double foros = sumv * 0.23;
+					double kerdos = sumv - foros;
+					
+					motime.setText(String.valueOf(mot)+"'");
+					takings.setText(String.valueOf(sumv)+"€");
+					fpa.setText(String.valueOf(foros)+"€");
+					profits.setText(String.valueOf(kerdos)+"€");
+					
+					
+			}catch (Exception e1)
+			{
+			e1.printStackTrace();
+			}
+			finally
+			{
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου rs (Result Set)
+				try { if (rs != null) rs.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου stmt (Statement)
+				try { if (stmt != null) stmt.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου conn (Connection)
+				try { if (conn != null) conn.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+				}
+						
+			}
+		});
+		calc.setBounds(20, 280, 110, 23);
+		contentPane.add(calc);
+		
+		
+		//Καθαρισμός πεδίων
+		JButton clear = new JButton("\u039A\u03B1\u03B8\u03B1\u03C1\u03B9\u03C3\u03BC\u03CC\u03C2");
+		clear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		clear.setBounds(150, 280, 110, 23);
+		contentPane.add(clear);
+		
+	
+		//Exit button
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		exit.setBounds(280, 280, 110, 23);
+		contentPane.add(exit);
+	}
+}

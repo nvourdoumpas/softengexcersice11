@@ -1,0 +1,13 @@
+{
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jre7\\lib\\rt.jar\u0027. Skipped."
+  },
+  "C:\\Users\\nvour_000\\Desktop\\eclipse\\workspace\\softeng\\SoftEng\\src": {
+    "location": "C:\\Users\\nvour_000\\Desktop\\eclipse\\workspace\\softeng\\SoftEng\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\nvour_000\\Desktop\\eclipse\\workspace\\softeng\\SoftEng\\src\u0027. Skipped."
+  }
+}

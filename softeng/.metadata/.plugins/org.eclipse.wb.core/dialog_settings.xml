@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item value="346" key="height"/>
+		<item value="530" key="width"/>
+		<item value="107" key="y"/>
+		<item value="247" key="x"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.order.ReorderDialog">
+		<item value="366" key="height"/>
+		<item value="520" key="width"/>
+		<item value="97" key="y"/>
+		<item value="252" key="x"/>
+	</section>
+</section>

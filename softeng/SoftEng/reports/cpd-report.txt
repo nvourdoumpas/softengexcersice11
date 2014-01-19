@@ -1,0 +1,617 @@
+Found a 34 line (117 tokens) duplication in the following files: 
+Starting at line 119 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 479 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+						stmt.executeUpdate(sql);
+						
+						stmt.close();
+						System.out.println("Registration Complete!");
+						
+						
+					}
+					catch (Exception e2)
+					{
+					e2.printStackTrace();
+					}
+					finally
+					{
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου rs (Result Set)
+						try { if (rs != null) rs.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου stmt (Statement)
+						try { if (stmt != null) stmt.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου conn (Connection)
+						try { if (conn != null) conn.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+					}
+					
+					
+					
+					
+				}
+				
+			}
+		});
+=====================================================================
+Found a 30 line (116 tokens) duplication in the following files: 
+Starting at line 33 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 41 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 37 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+					Employee frame = new Employee();
+					frame.setVisible(false);
+				
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+				try { 
+					if (rs != null) rs.close(); } 
+				catch (SQLException e) {
+					e.printStackTrace(); }
+					
+					try { 
+						if (stmt != null) stmt.close(); }
+					catch (SQLException e) {
+					e.printStackTrace(); }
+					try { 
+						if (conn != null) conn.close(); } 
+					catch (SQLException e){
+					e.printStackTrace(); }
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Employee() {
+=====================================================================
+Found a 29 line (98 tokens) duplication in the following files: 
+Starting at line 205 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 188 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+						}
+						
+					
+					
+														
+					
+				}
+				catch (Exception e1)
+				{
+				e1.printStackTrace();
+				}
+				finally
+				{
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου rs (Result Set)
+					try { if (rs != null) rs.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου stmt (Statement)
+					try { if (stmt != null) stmt.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου conn (Connection)
+					try { if (conn != null) conn.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+				}
+				
+			}
+		});
+=====================================================================
+Found a 25 line (98 tokens) duplication in the following files: 
+Starting at line 241 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 162 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+					System.out.println("Sent Complete!");
+
+					}
+			catch (Exception e1)
+			{
+			e1.printStackTrace();
+			}
+			finally
+			{
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου rs (Result Set)
+				try { if (rs != null) rs.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου stmt (Statement)
+				try { if (stmt != null) stmt.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+				// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+				// του αντικειμένου conn (Connection)
+				try { if (conn != null) conn.close(); } catch (SQLException e1) {
+				e1.printStackTrace(); }
+			}
+				
+			}
+		});
+=====================================================================
+Found a 29 line (97 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 122 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 482 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+								System.out.println("Update Complete!");
+
+					}
+					catch (Exception e2)
+					{
+					e2.printStackTrace();
+					}
+					finally
+					{
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου rs (Result Set)
+						try { if (rs != null) rs.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου stmt (Statement)
+						try { if (stmt != null) stmt.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+						// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+						// του αντικειμένου conn (Connection)
+						try { if (conn != null) conn.close(); } catch (SQLException e2) {
+						e2.printStackTrace(); }
+					}
+					
+					
+					
+					
+				
+			}
+		});
+=====================================================================
+Found a 23 line (97 tokens) duplication in the following files: 
+Starting at line 211 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 189 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 243 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 165 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+				}
+				catch (Exception e1)
+				{
+				e1.printStackTrace();
+				}
+				finally
+				{
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου rs (Result Set)
+					try { if (rs != null) rs.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου stmt (Statement)
+					try { if (stmt != null) stmt.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου conn (Connection)
+					try { if (conn != null) conn.close(); } catch (SQLException e1) {
+					e1.printStackTrace(); }
+				}
+				
+			}
+		});
+=====================================================================
+Found a 16 line (80 tokens) duplication in the following files: 
+Starting at line 140 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 42 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 49 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 45 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+					try { if (rs != null) rs.close(); } catch (SQLException e) {
+					e.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου stmt (Statement)
+					try { if (stmt != null) stmt.close(); } catch (SQLException e) {
+					e.printStackTrace(); }
+					// Απλευθερώνει τα resources (σε ΒΔ και JDBC)
+					// του αντικειμένου conn (Connection)
+					try { if (conn != null) conn.close(); } catch (SQLException e) {
+					e.printStackTrace(); }
+				}
+				
+				
+				
+				
+			}
+=====================================================================
+Found a 16 line (67 tokens) duplication in the following files: 
+Starting at line 80 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 160 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+			public void actionPerformed(ActionEvent arg0) {
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+				Boolean login=false;
+				
+				try
+				{
+					Class.forName("com.mysql.jdbc.Driver").newInstance();
+					String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+					String connectionUser = "root";
+					String connectionPassword = "softeng";
+					conn = DriverManager.getConnection(connectionUrl, connectionUser,
+					connectionPassword);
+					stmt = conn.createStatement();
+					rs = stmt.executeQuery("SELECT * FROM login;");
+=====================================================================
+Found a 18 line (59 tokens) duplication in the following files: 
+Starting at line 98 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 225 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+				int c =Integer.parseInt(setcourier.getText()) ;
+				
+					
+					try
+					{
+						
+						
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM transfer;");
+						
+						
+							String sql = "UPDATE transfer SET courrier='"+c+"' WHERE at='"+o+"'"; 
+=====================================================================
+Found a 12 line (52 tokens) duplication in the following files: 
+Starting at line 87 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 213 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+		setcourier.setColumns(10);
+		
+		//Ορισμός του αποστολέα απο τον υπάλληλο.
+		JButton sent = new JButton("\u0391\u03C0\u03BF\u03C3\u03C4\u03BF\u03BB\u03AE");
+		sent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+				
+				int o =Integer.parseInt(order.getText()) ;
+				int c =Integer.parseInt(setcourier.getText()) ;
+=====================================================================
+Found a 15 line (52 tokens) duplication in the following files: 
+Starting at line 98 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 154 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 225 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+				int c =Integer.parseInt(setcourier.getText()) ;
+				
+					
+					try
+					{
+						
+						
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM transfer;");
+=====================================================================
+Found a 12 line (51 tokens) duplication in the following files: 
+Starting at line 101 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 155 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 226 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 132 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+					try
+					{
+						
+						
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM transfer;");
+=====================================================================
+Found a 10 line (49 tokens) duplication in the following files: 
+Starting at line 86 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 101 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 166 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 155 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 226 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 132 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+				try
+				{
+					Class.forName("com.mysql.jdbc.Driver").newInstance();
+					String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+					String connectionUser = "root";
+					String connectionPassword = "softeng";
+					conn = DriverManager.getConnection(connectionUrl, connectionUser,
+					connectionPassword);
+					stmt = conn.createStatement();
+					rs = stmt.executeQuery("SELECT * FROM login;");
+=====================================================================
+Found a 8 line (49 tokens) duplication in the following files: 
+Starting at line 105 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 465 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 157 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 228 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 134 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM transfer;");
+=====================================================================
+Found a 8 line (49 tokens) duplication in the following files: 
+Starting at line 105 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 168 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM customer;");
+=====================================================================
+Found a 10 line (49 tokens) duplication in the following files: 
+Starting at line 529 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 286 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+		clear.setBounds(230, 560, 100, 30);
+		contentPane.add(clear);
+		
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		exit.setBounds(340, 560, 100, 30);
+=====================================================================
+Found a 10 line (48 tokens) duplication in the following files: 
+Starting at line 103 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 463 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+						String poc = postcodec.getText();
+						
+						Class.forName("com.mysql.jdbc.Driver").newInstance();
+						String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+						String connectionUser = "root";
+						String connectionPassword = "softeng";
+						conn = DriverManager.getConnection(connectionUrl, connectionUser,
+						connectionPassword);
+						stmt = conn.createStatement();
+						rs = stmt.executeQuery("SELECT * FROM customer;");
+=====================================================================
+Found a 8 line (47 tokens) duplication in the following files: 
+Starting at line 88 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 105 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 105 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 168 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 465 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 157 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 228 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 134 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+					Class.forName("com.mysql.jdbc.Driver").newInstance();
+					String connectionUrl = "jdbc:mysql://localhost:3307/softeng";
+					String connectionUser = "root";
+					String connectionPassword = "softeng";
+					conn = DriverManager.getConnection(connectionUrl, connectionUser,
+					connectionPassword);
+					stmt = conn.createStatement();
+					rs = stmt.executeQuery("SELECT * FROM login;");
+=====================================================================
+Found a 10 line (45 tokens) duplication in the following files: 
+Starting at line 529 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 286 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 201 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		clear.setBounds(230, 560, 100, 30);
+		contentPane.add(clear);
+		
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		exit.setBounds(340, 560, 100, 30);
+=====================================================================
+Found a 7 line (42 tokens) duplication in the following files: 
+Starting at line 198 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 545 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+							userc.setText("");
+							passc.setText("");
+							firstnamec.setText("");
+							lastnamec.setText("");
+							addressc.setText("");
+							statec.setText("");
+							postcodec.setText("");
+=====================================================================
+Found a 7 line (39 tokens) duplication in the following files: 
+Starting at line 58 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 65 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 68 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		setBounds(100, 100, 449, 302);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Username");
+=====================================================================
+Found a 6 line (36 tokens) duplication in the following files: 
+Starting at line 520 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 275 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+				firstname.setText("");
+				lastname.setText("");
+				address.setText("");
+				state.setText("");
+				postcode.setText("");
+				value.setText("");
+=====================================================================
+Found a 7 line (34 tokens) duplication in the following files: 
+Starting at line 58 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 65 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 72 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 68 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		setBounds(100, 100, 449, 302);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Username");
+=====================================================================
+Found a 5 line (33 tokens) duplication in the following files: 
+Starting at line 58 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 65 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 70 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 72 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 68 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		setBounds(100, 100, 449, 302);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+=====================================================================
+Found a 8 line (31 tokens) duplication in the following files: 
+Starting at line 151 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 201 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		clear.setBounds(109, 150, 89, 23);
+		contentPane.add(clear);
+		
+		
+		//Exit Button
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+=====================================================================
+Found a 8 line (29 tokens) duplication in the following files: 
+Starting at line 151 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 529 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 286 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+
+		clear.setBounds(109, 150, 89, 23);
+		contentPane.add(clear);
+		
+		
+		//Exit Button
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 36 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 29 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 48 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 37 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 33 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+=====================================================================
+Found a 5 line (28 tokens) duplication in the following files: 
+Starting at line 79 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 79 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+		LoginButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+=====================================================================
+Found a 5 line (28 tokens) duplication in the following files: 
+Starting at line 91 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+Starting at line 159 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 437 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 148 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 218 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 125 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		sent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+=====================================================================
+Found a 13 line (26 tokens) duplication in the following files: 
+Starting at line 41 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 52 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+					Login frame = new Login();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Login() {
+=====================================================================
+Found a 5 line (26 tokens) duplication in the following files: 
+Starting at line 118 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 193 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+
+						}
+					}
+						
+						if (login.equals(false)) {
+							JOptionPane.showMessageDialog(null, "Εσφαλμένος Όνομα Χρήση / Κωδικός", "Δοκιμάστε Ξανά!", JOptionPane.WARNING_MESSAGE);
+=====================================================================
+Found a 7 line (26 tokens) duplication in the following files: 
+Starting at line 513 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Customer.java
+Starting at line 267 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Courier.java
+Starting at line 188 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Administrator.java
+
+		contentPane.add(send);
+		
+		
+		//Button για καθαρισμό της φόρμας της παραγγελίας
+		JButton clear = new JButton("\u039A\u03B1\u03B8\u03B1\u03C1\u03B9\u03C3\u03BC\u03CC\u03C2");
+		clear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+=====================================================================
+Found a 5 line (25 tokens) duplication in the following files: 
+Starting at line 161 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Login.java
+Starting at line 157 of C:\Users\nvour_000\Desktop\eclipse\workspace\softeng\SoftEng\src\Vourdoumpas_Samios\Employee.java
+
+		ExitButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});

@@ -1,0 +1,282 @@
+package Vourdoumpas_Samios;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JScrollBar;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Customer extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField userc;
+	private JTextField passc;
+	private JTextField lastnamec;
+	private JTextField firstnamec;
+	private JTextField addressc;
+	private JTextField statec;
+	private JTextField postcodec;
+	private JTextField lastname;
+	private JTextField firstname;
+	private JTextField address;
+	private JTextField state;
+	private JTextField postcode;
+	private JTextField value;
+	private JComboBox item;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Customer frame = new Customer();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Customer() {
+		setTitle("Welcome Customer!");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 541, 671);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton create = new JButton("\u0394\u03B7\u03BC\u03B9\u03BF\u03C5\u03C1\u03B3\u03AF\u03B1");
+		create.setBounds(135, 77, 95, 23);
+		contentPane.add(create);
+		
+		JButton login = new JButton("\u0395\u03AF\u03C3\u03BF\u03B4\u03BF\u03C2");
+		login.setBounds(240, 77, 89, 23);
+		contentPane.add(login);
+		
+		JLabel lblUsername = new JLabel("Username");
+		lblUsername.setBounds(155, 15, 50, 20);
+		contentPane.add(lblUsername);
+		
+		JLabel lblNewLabel = new JLabel("Password");
+		lblNewLabel.setBounds(155, 46, 50, 20);
+		contentPane.add(lblNewLabel);
+		
+		userc = new JTextField();
+		userc.setBounds(215, 15, 86, 20);
+		contentPane.add(userc);
+		userc.setColumns(10);
+		
+		passc = new JTextField();
+		passc.setBounds(215, 46, 86, 20);
+		contentPane.add(passc);
+		passc.setColumns(10);
+		
+		lastnamec = new JTextField();
+		lastnamec.setColumns(10);
+		lastnamec.setBounds(130, 107, 200, 20);
+		contentPane.add(lastnamec);
+		
+		JLabel label = new JLabel("\u0395\u03C0\u03CE\u03BD\u03C5\u03BC\u03BF");
+		label.setBounds(10, 107, 110, 20);
+		contentPane.add(label);
+		
+		JLabel label_1 = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1");
+		label_1.setBounds(10, 137, 110, 20);
+		contentPane.add(label_1);
+		
+		firstnamec = new JTextField();
+		firstnamec.setColumns(10);
+		firstnamec.setBounds(130, 137, 200, 20);
+		contentPane.add(firstnamec);
+		
+		addressc = new JTextField();
+		addressc.setColumns(10);
+		addressc.setBounds(130, 168, 200, 20);
+		contentPane.add(addressc);
+		
+		JLabel label_2 = new JLabel("\u0394\u03B9\u03B5\u03CD\u03B8\u03C5\u03BD\u03C3\u03B7");
+		label_2.setBounds(10, 168, 110, 20);
+		contentPane.add(label_2);
+		
+		JLabel label_3 = new JLabel("\u03A0\u03CC\u03BB\u03B7");
+		label_3.setBounds(10, 199, 110, 20);
+		contentPane.add(label_3);
+		
+		statec = new JTextField();
+		statec.setColumns(10);
+		statec.setBounds(130, 199, 200, 20);
+		contentPane.add(statec);
+		
+		JLabel label_4 = new JLabel("\u03A4.\u039A.");
+		label_4.setBounds(10, 230, 110, 20);
+		contentPane.add(label_4);
+		
+		postcodec = new JTextField();
+		postcodec.setColumns(10);
+		postcodec.setBounds(130, 230, 200, 20);
+		contentPane.add(postcodec);
+		
+		JLabel lblNewLabel_1 = new JLabel("\u039D\u03AD\u03B1 \u03A0\u03B1\u03C1\u03B1\u03B3\u03B3\u03B5\u03BB\u03AF\u03B1");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel_1.setBounds(10, 261, 100, 30);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel label_5 = new JLabel("\u03A4\u03CD\u03C0\u03BF\u03C2 \u0394\u03AD\u03BC\u03B1\u03C4\u03BF\u03C2");
+		label_5.setBounds(9, 302, 110, 20);
+		contentPane.add(label_5);
+		
+		JLabel label_7 = new JLabel("\u03A3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03A0\u03B5\u03BB\u03AC\u03C4\u03B7");
+		label_7.setFont(new Font("Tahoma", Font.BOLD, 11));
+		label_7.setBounds(10, 70, 100, 30);
+		contentPane.add(label_7);
+		
+		lastname = new JTextField();
+		lastname.setColumns(10);
+		lastname.setBounds(129, 333, 200, 20);
+		contentPane.add(lastname);
+		
+		JLabel label_6 = new JLabel("\u0395\u03C0\u03CE\u03BD\u03C5\u03BC\u03BF \u03A0\u03B1\u03C1\u03B1\u03BB\u03AE\u03C0\u03C4\u03B7");
+		label_6.setBounds(9, 333, 110, 20);
+		contentPane.add(label_6);
+		
+		JLabel label_8 = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1  \u03A0\u03B1\u03C1\u03B1\u03BB\u03AE\u03C0\u03C4\u03B7");
+		label_8.setBounds(9, 363, 110, 20);
+		contentPane.add(label_8);
+		
+		firstname = new JTextField();
+		firstname.setColumns(10);
+		firstname.setBounds(129, 363, 200, 20);
+		contentPane.add(firstname);
+		
+		address = new JTextField();
+		address.setColumns(10);
+		address.setBounds(129, 394, 200, 20);
+		contentPane.add(address);
+		
+		JLabel label_9 = new JLabel("\u0394\u03B9\u03B5\u03CD\u03B8\u03C5\u03BD\u03C3\u03B7 \u03A0\u03B1\u03C1\u03B1\u03BB\u03AE\u03C0\u03C4\u03B7");
+		label_9.setBounds(9, 394, 110, 20);
+		contentPane.add(label_9);
+		
+		JLabel label_10 = new JLabel("\u03A0\u03CC\u03BB\u03B7  \u03A0\u03B1\u03C1\u03B1\u03BB\u03AE\u03C0\u03C4\u03B7");
+		label_10.setBounds(9, 425, 110, 20);
+		contentPane.add(label_10);
+		
+		state = new JTextField();
+		state.setColumns(10);
+		state.setBounds(129, 425, 200, 20);
+		contentPane.add(state);
+		
+		JLabel label_11 = new JLabel("\u03A4.\u039A.  \u03A0\u03B1\u03C1\u03B1\u03BB\u03AE\u03C0\u03C4\u03B7");
+		label_11.setBounds(9, 456, 110, 20);
+		contentPane.add(label_11);
+		
+		postcode = new JTextField();
+		postcode.setColumns(10);
+		postcode.setBounds(129, 456, 200, 20);
+		contentPane.add(postcode);
+		
+		JLabel label_13 = new JLabel("\u0391\u03BE\u03AF\u03B1");
+		label_13.setBounds(9, 518, 110, 20);
+		contentPane.add(label_13);
+		
+		value = new JTextField();
+		value.setEditable(false);
+		value.setColumns(10);
+		value.setBounds(129, 518, 200, 20);
+		contentPane.add(value);
+		
+		JButton calc = new JButton("\u03A5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03BC\u03CC\u03C2");
+		calc.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			    double val=0.0;
+				switch (item.getSelectedIndex()) {
+				case 0:
+					val=2.0;
+					value.setText(String.valueOf(val));
+					break;
+				case 1:
+					val=3.0;
+					value.setText(String.valueOf(val));
+					break;
+				case 2:
+					val=3.2;
+					value.setText(String.valueOf(val));
+					break;
+				case 3:
+					val=3.4;
+					value.setText(String.valueOf(val));
+					break;
+				case 4:
+					val=3.6;
+					value.setText(String.valueOf(val));
+					break;
+				case 5:
+					val=3.8;
+					value.setText(String.valueOf(val));
+					break;
+				case 6:
+					val=4;
+					value.setText(String.valueOf(val));
+					break;
+				case 7:
+					val=4.2;
+					value.setText(String.valueOf(val));
+					break;
+				case 8:
+					val=4.4;
+					value.setText(String.valueOf(val));
+					break;
+				case 9:
+					val=4.6;
+					value.setText(String.valueOf(val));
+					break;
+				case 10:
+					val=4.8;
+					value.setText(String.valueOf(val));
+					break;
+			    }
+			    	
+			    	
+			    
+			}
+		});
+		calc.setBounds(10, 560, 100, 30);
+		contentPane.add(calc);
+		
+		JButton send = new JButton("\u0391\u03C0\u03BF\u03C3\u03C4\u03BF\u03BB\u03AE");
+		send.setBounds(120, 560, 100, 30);
+		contentPane.add(send);
+		
+		JButton clear = new JButton("\u039A\u03B1\u03B8\u03B1\u03C1\u03B9\u03C3\u03BC\u03CC\u03C2");
+		clear.setBounds(230, 560, 100, 30);
+		contentPane.add(clear);
+		
+		JButton exit = new JButton("\u0388\u03BE\u03BF\u03B4\u03BF\u03C2");
+		exit.setBounds(340, 560, 100, 30);
+		contentPane.add(exit);
+		
+		final JComboBox item = new JComboBox();
+		item.setMaximumRowCount(15);
+		item.setModel(new DefaultComboBoxModel(new String[] {"Folder", "Item 2kg", "Item 4kg", "Item 6kg", "Item 8kg", "Item 10kg", "Item 12kg", "Item 14kg", "Item 16kg", "Item 18kg", "Item 20kg"}));
+		item.setSelectedIndex(0);
+		item.setBounds(130, 300, 200, 20);
+		contentPane.add(item);
+	}
+}
